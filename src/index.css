@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+} */
+
+.navbar {
+    display : flex;
+    flex-direction: row;
+    align-items : center;
+    justify-content : space-between;
+    max-width : 100%;
+    margin : 0 auto;
+    padding : 15px 40px;
+    background-color : transparent !important;
+    /* border-bottom : 1px solid #f2f2f2; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+    /* box-shadow: 0 4px 20px rgba(228, 228, 228, 0.3);  */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Dark shadow for the home page */
+
+
+    position : relative;
+    z-index : 1;
+}
+.home-page .navbar {
+      box-shadow: 0 4px 20px rgba(228, 228, 228, 0.25); 
+
+}
+.home-page .navbar .title h1 {
+  margin-left : 130px;
+    color : white;
+    font-size : 40px;
+}
+.home-page .navbar a {
+  text-decoration: none;
+    padding : 10px;
+    color : white;
+    font-size : 18px;
+    font-weight : 500;
+}
+.navbar .logo img {
+    width : 100px;
+    height : 70px;
+    object-fit : cover;
+    margin-left : 30px;
+    /*padding-left : 10px; */
+}
+.navbar .title h1{
+  margin-left : 130px;
+    color : #c63527;
+    /* color : white; */
+    font-size : 40px;
+}
+.navbar .links {
+  display : flex;
+  justify-content: space-between;
+  align-items : center;
+}
+.navbar a {
+    text-decoration: none;
+    padding : 10px;
+    color : #333;
+    /* color : white; */
+    font-size : 18px;
+    font-weight : 500;
+}
+
+.navbar a:hover {
+    /* color : #f3156d; */
+    color : #c63527;
+    transition : all 0.2s ease-in-out;
+}
+.navbar .links a.more:hover {
+    color : black !important;
+    font-size : 20px;
+}
+
+
+/*client form
+ 
+
+/*Client form */
+.client-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing : border-box;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  form > div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .text {
+    margin-top: 15px;
+  }
+  
+  .text a {
+    text-decoration: underline;
+    color: whitesmoke;
+  }
+  
+  
+  
+  /* login page */
+  .login-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height : 60px;
+    background-color : white !important;
+  }
+  
+  .login-logo {
+    margin-right: 20px; /* Add some spacing between the logo and title */
+  }
+  
+  .login-logo img {
+    width: 100px; /* Set the desired width for your logo */
+    height: 50px; /* Adjust the height proportionally */
+  }
+
+  
+  .login-title {
+    flex: 1; /* This will make the title take up the available space and center it */
+    text-align: center; /* Center the title text horizontally */
+    margin-right : 125px;
+    color : green;
+  }
+  
+  .login-title h1 {
+    font-size: 58px; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margins to avoid extra spacing */
+  }
+
+  .login-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147)); */
+    background-image : url('/public/test4.jpg');
+    background-size : cover;
+    background-repeat: no-repeat;  
+    background-position: center; 
+    color : whitesmoke;
+  }
+ 
+
+ .login-main h2 {
+    font-weight : 800;
+    font-style: italic;
+    font-size : 40px;
+    margin-bottom : 60px;
+ }
+ .login-main .quote {
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items: center;
+    text-align: center;
+ }
+
+ /* RegistrationForm.css */
+
+.registration-form {
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147)); */
+    color : white;
+  }
+  .registration-form h2 {
+    font-weight : 900;
+    font-family : 'Quicksand';
+  }
+  .reg-main {
+    /* background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147)); */
+    background-image : url('/public/test4.jpg');
+    background-size : cover;
+    background-repeat: no-repeat; /* Prevent image repeating */
+    background-position: center; /* Center the image */
+    height : 100vh;
+    display : flex;
+    justify-content : center;
+    align-items: center;
+  }
+.reg-main .reg-quotes {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left : 100px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Custom radio button style */
+  .gender-radio {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .gender-radio label {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Button style */
+  .form-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .form-button:hover {
+    background-color: #0069d9;
+  }
+  
+  
+  /*trying ahmed css */
+  /* merged manually */
+
+
+  /* .App {
+    text-align: center;
+  } */
+  
+  /* body{
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  } */
+
+  .all-mainpage {
+    /* background : linear-gradient(to top ,  #171c8f, #d0d3d4); */
+    background-image : url('/public/test4.jpg');
+    background-size : cover;
+    background-repeat: no-repeat; 
+    height : 100vh;
+  }
+
+  .widgets {
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .widgets h1{
+    color: white;
+    font-size : 70px;
+    animation: fadein 0.6s ease-in-out;
+  }
+
+
+  .diet-form h1{
+    text-align: center;
+  }
+
+  .widgets h2{
+    color:white;
+  }
+  
+  /* .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  } */
+
+  .mainText{
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    margin-top : 80px;
+    margin-bottom : 80px;
+    }
+
+  
+
+  .widget-buttons {
+    display : flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-items: center;
+    gap : 100px;
+  }
+  
+  /* .widg-button{
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bolder;
+    background-color: transparent;
+    border:none;
+    border-radius: 40px;
+    color:rgb(255, 255, 255);
+    padding: 70px 20px;
+    margin: 20px;
+    gap: 100px;
+    width: 270px;
+    height:270px;
+    display: flex;
+    flex-direction : row;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor : pointer;
+    transition : transform 0.2s, box-shadow 0.2s;
+  
+  } */
+  .all-workout {
+    text-align : left;
+;
+  }
+  
+
+  .workout {
+    background: linear-gradient(117.5deg, #020215 20.5%, #fff 90.2%);
+    border-radius: 10px;
+  }
+  
+  .workout .widg-button {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    padding: 70px 20px;
+    width: 270px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .diet_plan {
+    background: linear-gradient(109.6deg,  #050615 20.5%, #fff 90.2%);
+    border-radius: 10px;
+  }
+
+  
+  .diet_plan .widg-button {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    padding: 70px 20px;
+    width: 270px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+
+  
+
+  .diagnosis {
+    background: linear-gradient(117.5deg, #050515 20.5%, white 90.2%);
+    border-radius: 10px;
+  }
+  
+  .diagnosis .widg-button {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    border-radius: 40px;
+    color:  white;
+    padding: 70px 20px;
+    width: 270px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  
+  .workout:hover{
+    transform:scale(1.2);
+    transition-duration: 0.5s;
+    /* background: rgb(89, 233, 162) */
+    background :linear-gradient(to left ,white,  rgb(1, 3, 40));
+  }
+  
+  .diet_plan:hover{
+    transform:scale(1.2);
+    transition-duration: 0.5s;
+    background :linear-gradient(to left ,white,  rgb(1, 3, 40));  
+  }
+  
+  .diagnosis:hover{
+    transform:scale(1.2);
+    transition-duration: 0.5s;
+    background :linear-gradient(to left ,white,  rgb(1, 3, 40));  }
+  
+  .link{
+    text-decoration: none;
+  }
+
+  /* CSS for the back button */
+  .back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  transition: background-color 0.2s, transform 0.2s; /* Add smooth transitions for hover */
+}
+
+/* Dark styles for the button on hover */
+.back-button:hover {
+  background-color: #444; /* Darker background color on hover */
+  transform: scale(1.05); /* Slightly scale up the button on hover */
+}
+
+/* loadingScreen.css */
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image : url('/public/test4.jpg');
+  background-size : cover;
+  background-repeat : no-repeat;
+}
+
+.loader {
+  border: 10px solid #f3f3f3; /* Light gray border */
+  border-top: 4px solid #3498db; /* Blue border on top */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.3s linear infinite; /* Add rotation animation */
+}
+.loading-screen p {
+  color : white
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ContactForm.css */
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image : url('/public/test4.jpg');
+  background-size : cover;
+  background-repeat : no-repeat;
+  color : white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.contact-form textarea {
+  resize: vertical; /* Prevent text area from being minimized */
+}
+
+.contact-form .form-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contact-form .text {
+  margin-top: 15px;
+}
+
+.contact-form .text a {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.popup {
+  position: fixed;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color : black;
+}
+
+
+
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
+
+.diet-form{
+  flex-direction: column;
+  gap: 200px;
+}
+
+.diet-form-radiobuttons{
+  flex-direction: row;
+  gap: 20px;
+  text-align: center;
+  margin-right:20px;
+  margin-left: 20px;
+  transform: scale(1.2);
+  transition: box-shadow 0.4s ease-in-out;
+
+}
+
+
+.diet-form-textBox{
+  transition: box-shadow 0.6s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.diet-form-textBox:focus{
+ outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 10px #0d4cf9; /* Add a blue shadow when the input is focused */
+  background-color: #f7f7f7; 
+  transform: scale(1.05);
+}
+
+.component-container {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.component-container.show {
+  opacity: 1;
+}
+
+.diet-form-textBox {
+  animation: slidein 0.4s ease-in-out;
+}
+
+.diet-form-radiobuttons{
+  animation: slidein 0.4s ease-in-out;
+ 
+}
+
+
+
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opcaity: 1;
+  }
+}
+
+label:focus {
+  transform: translateY(-5px);
+}
+
+.mainPlanText{
+  text-align:left;
+  font-size: 18px;
+  width : 900px;
+  /* height : 150vh; */
+  /* height : 130vh; */
+  font-weight: 500;
+  color:#000000;
+  border: 2px solid #000000; /* Thicker border */
+  box-shadow: 0 6px 12px rgba(200, 200, 200, 0.5); 
+  background : whitesmoke;
+  font-family: 'Quicksand';
+  /* background : linear-gradient(to left,  #c4c4c4 1.5%, #c63527 110.2%); */
+  /* background-image : url('/public/back.jpg'); */
+  background-size : cover;
+  background-repeat: no-repeat;
+  /* filter: blur(2px); */
+  margin-top: 20px;
+  /* background-color:#c63527 ; */
+  border-radius: 5px;
+  padding: 10px;
+
+
+}
+
+.about-us {
+  background-image: url('/public/test4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 18px;
+  padding: 60px;
+  text-align: center;
+  height : 100vh;
+}
+
+.about-us p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Add overlay to improve text readability */
+/* .about-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+} */
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 20px;
+  background-color: #e74c3c; /* Red background color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight : 600;
+}
+
+.cta-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+
+
+
+
+  
+  
+
